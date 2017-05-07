@@ -1,3 +1,3 @@
-# Snail Hosts
+# Douyu Barrage
 
-A Chrome Extension PROXY support.
+A Chrome Extension Send Douyu Barrage.
