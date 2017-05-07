@@ -1,0 +1,19 @@
+{
+   "manifest_version": 2,
+   "name": "Douyu Barrage",
+   "description": "Douyu Barrage",
+   "version": "0.1.0",
+   "icons": {
+      "128": "icons/icon_128.png",
+      "16": "icons/icon_16.png",
+      "32": "icons/icon_32.png"
+   },
+   "incognito": "split",
+   "permissions": [ "tabs", "\u003Call_urls>" ],
+   "content_scripts": [
+       {
+         "matches": ["http://*.douyu.com/*", "https://*.douyu.com/*"],
+         "js": ["src/js/libs/jquery-2.1.4.min.js", "src/js/content.js"]
+       }
+     ]
+}
