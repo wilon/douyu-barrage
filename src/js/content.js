@@ -1,19 +1,18 @@
 
+var start = false;
 window.setInterval(function() {
     // 判断是【视听点播】栏目
-    var douyuRoomId = [122402];
-    var roomId = window.location.pathname.split("/")[1];
-    var inRoom = douyuRoomId.some(function(elem) {
-        return roomId == elem;
-    });
-    if (inRoom != true) {
-        console.log(roomId, inRoom)
+    if ($('.second').html() != '视听点评') {
+        console.log($('.second').html())
         return false;
     }
     // 进房间打卡一次
     if ($(".jschartli").length < 1) {
         console.log(roomId, inRoom)
         return false;
+    } else if (start == false) {
+        send("#打卡");
+        start = true;
     }
     var date = new Date();
     var hour = date.getHours();
