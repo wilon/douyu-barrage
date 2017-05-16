@@ -2,11 +2,10 @@
    "manifest_version": 2,
    "name": "Douyu Barrage",
    "description": "Send Douyu Barrage",
-   "version": "0.1.0",
+   "version": "0.1.1",
    "icons": {
-      "128": "icons/icon_128.png",
-      "16": "icons/icon_16.png",
-      "32": "icons/icon_32.png"
+      "128": "icons/tropical_fish_117.png",
+      "32": "icons/tropical_fish_39.png"
    },
    "incognito": "split",
    "permissions": [ "tabs", "\u003Call_urls>" ],
